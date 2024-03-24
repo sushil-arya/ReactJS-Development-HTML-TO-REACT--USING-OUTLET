@@ -1,14 +1,14 @@
 import React from "react";
-import { Outlet } from "react-router-dom";
+import { Link, Outlet } from "react-router-dom";
 
 export default function Layout() {
         return (
             <>
                 <nav className="navbar navbar-expand-lg navbar-light" id="mainNav">
                     <div className="container px-4 px-lg-5">
-                            <a className="navbar-brand" href="index.html">
+                            <Link to ="/" className="navbar-brand">
                                 Start Bootstrap
-                            </a>
+                            </Link>
                             <button
                                 className="navbar-toggler"
                                 type="button"
@@ -24,27 +24,27 @@ export default function Layout() {
                     <div className="collapse navbar-collapse" id="navbarResponsive">
                         <ul className="navbar-nav ms-auto py-4 py-lg-0">
                         <li className="nav-item">
-                            <a className="nav-link px-lg-3 py-3 py-lg-4" href="index.html">
+                            <Link to="/" className="nav-link px-lg-3 py-3 py-lg-4" >
                             Home
-                            </a>
+                            </Link>
                         </li>
                         <li className="nav-item">
-                            <a className="nav-link px-lg-3 py-3 py-lg-4" href="about.html">
+                            <Link to="/about" className="nav-link px-lg-3 py-3 py-lg-4" >
                             About
-                            </a>
+                            </Link>
                         </li>
                         <li className="nav-item">
-                            <a className="nav-link px-lg-3 py-3 py-lg-4" href="post.html">
+                            <Link to="/post" className="nav-link px-lg-3 py-3 py-lg-4">
                             Sample Post
-                            </a>
+                            </Link>
                         </li>
                         <li className="nav-item">
-                            <a
+                            <Link to="/contact"
                             className="nav-link px-lg-3 py-3 py-lg-4"
                             href="contact.html"
                             >
                             Contact
-                            </a>
+                            </Link>
                         </li>
                         </ul>
                     </div>
